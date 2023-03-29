@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black_shade_1"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--  show image take from gallery or camera -->
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageIv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/baseline_image_24"
+                app:strokeWidth="2dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/inputImageBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:text="Take image"
+                    app:cornerRadius="5dp"
+                    app:icon="@drawable/baseline_add_a_photo_24" />
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:id="@+id/identify"-->
+<!--                    android:text="Identify"-->
+<!--                    app:cornerRadius="5dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_marginEnd="5dp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent" />-->
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/recognizeTextBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:text="Recognize Text"
+                    app:cornerRadius="5dp"
+                    app:icon="@drawable/baseline_document_scanner_24" />
+
+
+
+
+            </LinearLayout>
+
+            <!-- to show the rechognize text -->
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/recognizeTextEt"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:textSize="12dp" />-->
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
