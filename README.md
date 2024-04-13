@@ -1,4 +1,4 @@
-"VisualText" is an innovative Android application that harnesses the power of visual recognition technologies to enhance accessibility and multilingual communication. This project focuses on developing an intuitive mobile platform that allows users to capture images and seamlessly convert them into text and speech in various languages.
+"TextRecognition" is an innovative Android application that harnesses the power of visual recognition technologies to enhance accessibility and multilingual communication. This project focuses on developing an intuitive mobile platform that allows users to capture images and seamlessly convert them into text and speech in various languages.
 
 Key Features:
 
